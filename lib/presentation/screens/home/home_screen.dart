@@ -52,7 +52,9 @@ class _CustomListTile extends StatelessWidget {
         item.icon,
         color: colors.primary,
       ),
-      onTap: () {},
+      onTap: () {
+        Navigator.pushNamed(context, item.link);
+      },
     );
   }
 }
