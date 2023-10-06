@@ -29,7 +29,7 @@ const appMenuItems = <MenuItem>[
   ),
   MenuItem(
     title: 'Progress Indicators',
-    subTitle: 'Lazy screen to show progress',
+    subTitle: 'Widgets to show progress',
     link: '/progress',
     icon: Icons.refresh_outlined,
   ),
@@ -38,5 +38,11 @@ const appMenuItems = <MenuItem>[
     subTitle: 'Info widgets',
     link: '/snackbars',
     icon: Icons.info_outline,
+  ),
+  MenuItem(
+    title: 'Animated Container',
+    subTitle: 'Some cool stuff',
+    link: '/animations',
+    icon: Icons.animation_outlined,
   ),
 ];
