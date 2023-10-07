@@ -45,4 +45,10 @@ const appMenuItems = <MenuItem>[
     link: '/animations',
     icon: Icons.animation_outlined,
   ),
+  MenuItem(
+    title: 'UI Controls & Tiles',
+    subTitle: 'Some controls for your account',
+    link: '/ui-controls',
+    icon: Icons.settings,
+  ),
 ];
