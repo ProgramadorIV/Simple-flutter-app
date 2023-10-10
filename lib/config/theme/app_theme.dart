@@ -19,8 +19,17 @@ class AppTheme {
             'Selected color can not exceed ${colorList.length - 1}');
 
   ThemeData getTheme() => ThemeData(
-      useMaterial3: true,
-      brightness: isDark ? Brightness.dark : Brightness.light,
-      colorSchemeSeed: colorList[selectedColor],
-      appBarTheme: const AppBarTheme(centerTitle: false));
+        useMaterial3: true,
+        brightness: isDark ? Brightness.dark : Brightness.light,
+        colorSchemeSeed: colorList[selectedColor],
+        appBarTheme: const AppBarTheme(centerTitle: false),
+      );
+
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDark,
+  }) =>
+      AppTheme(
+          selectedColor: selectedColor ?? this.selectedColor,
+          isDark: isDark ?? this.isDark);
 }
